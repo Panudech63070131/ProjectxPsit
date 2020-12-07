@@ -53,8 +53,6 @@ print("Server is listening...")
 recevice()
 
 (สร้างต่ออีกอัน)
-(https://www.neuralnine.com/tcp-chat-in-python/)
-
 import socket
 import threading
 
@@ -85,3 +83,5 @@ write_thread = threading.Thread(target=write)
 write_thread.start()
 
         client.send(message.encode('ascii'))
+
+ที่มา (https://www.neuralnine.com/tcp-chat-in-python/)
