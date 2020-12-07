@@ -49,3 +49,8 @@ def receive():
         thread = threading.Thread(target=handle, args=(client,))
         thread.start()
         
+print("Server is listening...")
+recevice()
+
+(สร้างต่ออีกอัน)
+(https://www.neuralnine.com/tcp-chat-in-python/)
