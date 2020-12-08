@@ -25,6 +25,10 @@ def receive():
                     if client.recv(1024).decode('ascii') == 'REFUSE':
                         print("Connection was refuse! Wrong password!")
                         stop_thread = True
+                elif next_message == 'BAN':
+                    print('Connection refused because of ban!')
+                    client.close()
+                    stop_thread = True
             else:
                 print(message)
         except:
@@ -53,3 +57,5 @@ receive_thread.start()
 
 write_thread = threading.Thread(target=write)
 write_thread.start()
+
+31.22
