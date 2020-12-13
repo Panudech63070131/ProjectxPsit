@@ -50,7 +50,7 @@ def receive():
         thread.start()
         
 print("Server is listening...")
-recevice()
+receive()
 
 (สร้างต่ออีกอัน)
 import socket
