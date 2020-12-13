@@ -33,7 +33,7 @@ def receive():
             break
 
 def write():
-while True:
+    while True:
         if stop_thread:   
             break
         message = f'{nickname}: {input("")}'
