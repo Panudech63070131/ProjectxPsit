@@ -32,7 +32,7 @@ def receive():
             else:
                 print(message)
         except:
-            print("An error occured!")
+            print("An error occurred!")
             client.close()
             break
             
@@ -41,16 +41,16 @@ def write():
         if stop_thread:   
             break
         message = f'{nickname}: {input("")}'
-        if message[len(nickname)+2:].startswitch('/'):
+        if message[len(nickname)+2:].startswith('/'):
             if nickname == 'admin':
                 if message[len(nickname)+2:].startswith('/kick'):
                     client.send(f'KICK {message[len(nickname)+2+6:]}'.encode('ascii'))
                 elif message[len(nickname)+2:].startswith('/ban'):
                     client.send(f'BAN {message[len(nickname)+2+5:]}'.encode('ascii'))
             else:
-                print("Coommands can only be executed by the admin!")
+                print("Commands can only be executed by the admin!")
         else:
-            client.send(message.encode('ascii')
+            client.send(message.encode('ascii'))
         
 receive_thread = threading.Thread(target=receive)
 receive_thread.start()
