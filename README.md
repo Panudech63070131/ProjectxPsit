@@ -1,6 +1,6 @@
 # PSIT PROJECT : TCP CHATROOM
 Advance TCP chat room
-กลุ่ม Project of Beginner
+TEAM Project of Beginner
 
 สมาชิก
 
