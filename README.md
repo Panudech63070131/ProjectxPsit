@@ -1,5 +1,5 @@
 # PSIT PROJECT : TCP CHATROOM
-Advance TCP chat room
+
 TEAM Project of Beginner
 
 สมาชิก
